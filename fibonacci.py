@@ -1,11 +1,16 @@
-n = int(input("enter number: "))
-a=0
-b=1
-for i in range(0,n):
-    print(a)
-    c=a+b
-    a=b
-    b=c
+# fibonacci  number using recursion
+
+def fib(n):
+    if n == 1 or n==2:
+        return 1
+    fib_1= fib(n-1)
+    fib_2 = fib(n-2)
+    output = fib_1+ fib_2
+    return output
+
+n = int(input("enter a number: "))
+fib(n)
+print(fib(n))
 
 
-# fibonacci recursion 
+ 
